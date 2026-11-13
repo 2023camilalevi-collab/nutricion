@@ -1,1 +1,92 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e9f8f3">
+    <title>Nutriconista | Tu vida saludable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+
+        <!-- Zona de chat -->
+        <section class="zona-de-chat" id="zona-de-chat"
+                 aria-label="Zona de chat">
+
+            <div class="chat-messages" id="chat-messages"
+                 aria-live="polite" aria-relevant="additions">
+
+                <div class="message agent-message">
+                    <div class="message-content">
+                        ¡Hola! Soy Nutriconista 🌿
+
+                        Estoy acá para ayudarte a construir
+                        una vida más saludable.
+
+                        Podemos conversar sobre alimentación,
+                        hábitos saludables y bienestar.
+
+                        ¿Por dónde te gustaría empezar?
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Zona de escritura -->
+        <section class="zona-de-escritura"
+                 aria-label="Zona de escritura">
+
+            <form id="chat-form" class="input-container">
+
+                <input
+                    type="text"
+                    id="mensaje"
+                    name="mensaje"
+                    maxlength="500"
+                    placeholder="Escribí tu mensaje..."
+                    autocomplete="off"
+                    aria-label="Escribí tu mensaje"
+                    required
+                >
+
+                <button type="submit" id="send-button"
+                        aria-label="Enviar mensaje">
+
+                    <svg viewBox="0 0 24 24"
+                         width="22" height="22"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2L15 22L11 13L2 9L22 2"></path>
+
+                    </svg>
+
+                </button>
+
+            </form>
+
+            <div class="input-footer">
+                <span id="char-counter">0 / 500</span>
+                <span>Nutriconista · Tu bienestar comienza hoy 🌱</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Configuración antes del script principal -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
